@@ -14,3 +14,6 @@ plt.figure(figsize = (6,4))
 plt.plot(x, f(x), label = 'y = 2x + 3')
 plt.grid()
 
+#Exercício 2: Gráfico de uma Função Quadrática
+#Desenhe o gráfico da função y = x^2 - 4x + 4. Crie uma massa de dados de exemplo usando np.linspace().
+
