@@ -17,3 +17,16 @@ plt.show()
 #Exercício 2: Gráfico de uma Função Quadrática
 #Desenhe o gráfico da função y = x^2 - 4x + 4. Crie uma massa de dados de exemplo usando np.linspace().
 
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-2,6,1000)
+y = x ** 2 - 4 * x + 4
+
+plt.plot(x, y)
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Gráfico da Função Linear y = x^2 - 4x + 4')
+plt.grid(True)
+plt.show()
+
