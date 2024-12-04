@@ -108,5 +108,27 @@ sol_negativo = (-b - cmath.sqrt(delta)) / (2 * a )
 
 print("As raízes são {0} e {1}".format(sol_positivo,sol_negativo))
 
+#Exercício 8: Equação Quadrática com Discriminante
+#Para a equação quadrática ax^2 + bx + c = 0, calcule o discriminante e determine o número de raízes reais.
 
+import cmath
+
+a = float(input("Digite o Coeficiente a: "))
+b = float(input("Digite o Coeficiente b: "))
+c = float(input("Digite o Coeficiente c: "))
+
+delta = (b ** 2) - (4 * a * c)
+
+if delta == 0:
+    sol_negativo = ( -b - cmath.sqrt(delta)) / (2 * a)
+    sol_positivo = ( -b + cmath.sqrt(delta)) / (2 * a)
+    print("Equação possui uma raiz real! Cálculo: Positivo:{0} e Negativo:{1}".format(sol_positivo,sol_negativo))
+
+elif delta > 0:
+    sol_negativo = ( -b - cmath.sqrt(delta)) / (2 * a)
+    sol_positivo = ( -b + cmath.sqrt(delta)) / (2 * a)
+    print("Equação possui duas raízes reais! Cálculo: Positivo: {0} e Negativo:{1}".format(sol_positivo,sol_negativo))
+
+else:
+    print("Equação não possui raízes reais!!")
 
