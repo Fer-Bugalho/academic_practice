@@ -92,6 +92,21 @@ sol_negativo = (-b - cmath.sqrt(delta)) / (2 * a )
 
 print("As raízes são {0} e {1}".format(sol_positivo,sol_negativo))
 
+#Exercício 7: Equação Quadrática com Entrada do Usuário
+#Modifique o programa anterior para aceitar coeficientes a, b, e c de um usuário e resolver a equação quadrática correspondente.
+
+a = float(input("Digite o Coeficiente a: "))
+b = float(input("Digite o Coeficiente b: "))
+c = float(input("Digite o Coeficiente c: "))
+
+import cmath
+
+delta = (b ** 2) - (4 * a * c)
+
+sol_positivo = (-b + cmath.sqrt(delta)) / (2 * a )
+sol_negativo = (-b - cmath.sqrt(delta)) / (2 * a )
+
+print("As raízes são {0} e {1}".format(sol_positivo,sol_negativo))
 
 
 
